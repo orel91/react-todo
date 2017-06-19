@@ -2,6 +2,8 @@ const React = require("react");
 const ReactDOM = require("react-dom");
 const {Route, Router, IndexRoute, hashHistory} = require("react-router");
 
+const TodoApp = require("TodoApp");
+
 // Load foundation
 // require("style!css!foundation-sites/dist/foundation.min.css");
 //style! => Load the style in the browser by injecting it in a <style> tag
@@ -14,6 +16,6 @@ require("style!css!sass!applicationStyles");
 $(document).foundation();
 
 ReactDOM.render(
-    <p>BoilerPlate3 Project</p>,
+    <TodoApp />,
     document.getElementById("app")
 );
